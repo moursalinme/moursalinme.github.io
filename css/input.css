@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.source-sans {
+    font-family: "Source Sans 3", sans-serif;
+}
+/* 
+.major-mono {
+    font-family: "Major Mono Display", monospace;
+} */
+@layer components {
+    .cmargin {
+        @apply m-6 sm:m-16 md:m-24;
+    }
+    .cpadding {
+        @apply p-6 sm:p-16 md:p-24;
+    }
+    .cmarginx {
+        @apply mx-6 sm:mx-16 md:mx-24;
+    }
+    .cpaddingx {
+        @apply px-6 sm:px-16 md:px-24;
+    }
+    .event {
+        @apply w-full  h-72 sm:h-80 md:h-110 hover:bg-gray-600 flex justify-center flex-col items-start;
+    }
+    .subhead {
+        @apply text-3xl font-semibold text-white source-sans;
+    }
+    .eventheading {
+        @apply text-2xl md:text-3xl font-semibold text-white source-sans;
+    }
+    .eventsubh {
+        @apply text-sm font-normal sm:font-semibold  tracking-widest text-white uppercase source-sans;
+    }
+    .eventsm {
+        @apply md:w-[40%] bg-slate-800;
+    }
+    .eventlg {
+        @apply md:w-[60%] bg-slate-500;
+    }
+    .addressH {
+        @apply text-3xl source-sans tracking-tight font-semibold;
+    }
+    .addressD {
+        @apply font-light source-sans tracking-wider text-xl text-white;
+    }
+    .addressmp {
+        @apply mt-10 md:mt-20 px-6 sm:px-14 md:px-20;
+    }
+    .smtext {
+        @apply font-normal text-sm sm:text-base md:text-lg uppercase tracking-widest text-white;
+    }
+    .addborder {
+        @apply border-b border-gray-500 w-full;
+    }
+}
