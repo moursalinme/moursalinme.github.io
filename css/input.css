@@ -41,10 +41,10 @@
         @apply md:w-[60%] bg-slate-500;
     }
     .addressH {
-        @apply text-3xl source-sans tracking-tight font-semibold;
+        @apply text-lg sm:text-xl md:text-3xl source-sans tracking-tight font-semibold;
     }
     .addressD {
-        @apply font-light source-sans tracking-wider text-xl text-white;
+        @apply font-light source-sans tracking-wider text-base md:text-xl text-white;
     }
     .addressmp {
         @apply mt-10 md:mt-20 px-6 sm:px-14 md:px-20;
