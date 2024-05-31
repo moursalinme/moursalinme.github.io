@@ -35,10 +35,10 @@
         @apply text-sm font-normal sm:font-semibold  tracking-widest text-white uppercase source-sans;
     }
     .eventsm {
-        @apply md:w-[40%] bg-slate-800;
+        @apply xs:w-[50%] md:w-[40%] bg-slate-800;
     }
     .eventlg {
-        @apply md:w-[60%] bg-slate-500;
+        @apply xs:w-[50%] md:w-[60%] bg-slate-500;
     }
     .addressH {
         @apply text-lg sm:text-xl md:text-3xl source-sans tracking-tight font-semibold;
