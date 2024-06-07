@@ -59,9 +59,9 @@
         @apply text-base sm:text-lg md:text-xl font-light  text-white mb-4;
     }
     .skillH {
-        @apply w-[30%] text-end font-normal text-2xl;
+        @apply w-[30%] text-end font-normal text-base sm:text-lg md:text-2xl;
     }
     .skillD {
-        @apply w-[70%] text-start text-xl font-light;
+        @apply w-[70%] text-start text-sm sm:text-base md:text-xl font-light;
     }
 }
