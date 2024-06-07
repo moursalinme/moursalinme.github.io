@@ -9,6 +9,29 @@
 .major-mono {
     font-family: "Major Mono Display", monospace;
 } */
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(5px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
 @layer components {
     .cmargin {
         @apply m-6 sm:m-16 md:m-24;
@@ -66,5 +89,11 @@
     }
     .skillrow {
         @apply flex w-full flex-row space-x-6 sm:space-x-12 md:space-x-16 items-center justify-start;
+    }
+    .fade-in-left {
+        animation: fadeInLeft 1s ease-out forwards;
+    }
+    .fade-in-right {
+        animation: fadeInRight 1s ease-out backwards;
     }
 }
