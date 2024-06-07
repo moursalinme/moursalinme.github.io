@@ -64,4 +64,7 @@
     .skillD {
         @apply w-[70%] text-start text-sm sm:text-base md:text-xl font-light;
     }
+    .skillrow {
+        @apply flex w-full flex-row space-x-6 sm:space-x-12 md:space-x-16 items-center justify-start;
+    }
 }
