@@ -1,49 +1,19 @@
-import { motion, useInView } from "framer-motion";
-import { useRef } from "react";
 import { FaFacebook, FaGithub, FaLinkedin } from "react-icons/fa";
-import { IoHome } from "react-icons/io5";
 
-function Footer() {
+export default function Connect() {
     const iconStyles =
-        "size-[4rem] md:size-12 lg:size-16 xl:size-20 z-[100] text-black/90 dark:text-white/95 cursor-pointer";
-
-    const textVariant = {
-        hidden: { opacity: 0, x: -100 },
-        visible: {
-            opacity: 1,
-            x: 0,
-            transition: { duration: 1, ease: "easeIn" },
-        },
-    };
-
-    const iconVariant = {
-        hidden: { opacity: 0, x: 100 },
-        visible: { opacity: 1, x: 0, transition: { duration: 1 } },
-    };
-
-    const ref = useRef(null);
-    const isInView = useInView(ref, { threshold: 0.4, once: true });
+        "size-[4rem] md:size-16 xl:size-20 z-[103] cursor-pointer hover:scale-105 transition-transform duration-400";
 
     return (
-        <div ref={ref} className="overflow-hidden  pt-28 md:pt-40">
-            <div className="flex flex-col lg:flex-row relative lg:flex-nowrap md:flex-wrap lg:pb-0 pb-10 gap-5 justify-center items-center">
-                <motion.div
-                    className="hidden md:block md:text-[6rem] lg:text-[12rem] absolute text-center justify-center items-center text-neutral-500/30 dark:text-neutral-500/50 z-[-10] font-semibold font-inter"
-                    initial="hidden"
-                    animate={isInView ? "visible" : "hidden"}
-                    variants={textVariant}
-                >
+        <section id="connect" className="py-14 md:py-28">
+            <div className="flex flex-col lg:flex-row relative lg:flex-nowrap md:flex-wrap lg:pb-0 pb-10 gap-5 justify-center items-center ">
+                <div className="hidden md:block md:text-[9.5rem] lg:text-[11.5rem] absolute text-center justify-center items-center text-neutral-500/50 font-hl_bold  z-[100] tracking-wider ">
                     <h1>CONNECT</h1>
-                </motion.div>
-                <div className="md:hidden text-[3.5rem] sm:text-[5rem] overflow-hidden text-center justify-center items-center text-black/75  dark:text-white/70 z-[-10] font-bold font-inter tracking-wider">
+                </div>
+                <div className="md:hidden text-[3.5rem] sm:text-[5rem] overflow-hidden text-center justify-center items-center font-hl_bold  tracking-wide">
                     CONNECT
                 </div>
-                <motion.div
-                    className="grid grid-cols-2 sm:flex  text-center  px-5 gap-10 sm:flex-nowrap sm:gap-10 pt-5 md:pt-0 sm:pb-0 sm:flex-row z-[100]  md:gap-10 lg:gap-15 xl:gap-20 w-full md:h-20 lg:h-36   justify-center"
-                    initial="hidden"
-                    animate={isInView ? "visible" : "hidden"}
-                    variants={iconVariant}
-                >
+                <div className="grid grid-cols-2 sm:flex  text-center  px-5 gap-10 sm:flex-nowrap sm:gap-10 pt-6 md:pt-0 sm:pb-0 sm:flex-row z-[100]  md:gap-10 lg:gap-15 xl:gap-20 w-full md:h-20 lg:h-36   justify-center">
                     <a
                         href="https://www.facebook.com/moursalinme"
                         target="_blank"
@@ -88,7 +58,7 @@ function Footer() {
                                 <g
                                     id="Desktop-HD"
                                     transform="translate(-868.000000, -2866.000000)"
-                                    className="fill-black/90 dark:fill-white/90"
+                                    className="fill-black"
                                 >
                                     <g
                                         id="Contact"
@@ -108,22 +78,8 @@ function Footer() {
                             </g>
                         </svg>
                     </a>
-                </motion.div>
-            </div>
-
-            <div className="flex flex-col gap-4 md:pt-32 pt-5 pb-8 justify-between w-full px-20 items-center">
-                <div className="flex gap-4 items-center justify-center">
-                    <IoHome className="size-[100px] sm:h-10 sm:w-10 md:mb-4 text-neutral-900/85 dark:text-neutral-100/85" />
-                    <h3 className="text-invert uppercase sm:text-lg md:text-xl  text-poppins  font-medium">
-                        Jatrabari, Dhaka-1212, Bangladesh
-                    </h3>
-                </div>
-                <div className=" text-invert text-md w-full  font-semibold uppercase text-center font-sans text-sm sm:text-lg md:text-xl ">
-                    <p>&copy; Moursalin Emon</p>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }
-
-export default Footer;

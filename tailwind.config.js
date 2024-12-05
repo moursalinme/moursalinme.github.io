@@ -1,19 +1,30 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-  darkMode: ["class"],
   content: [
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        'border-b': '#d6d6db',
+        'title': '#3b3d41',
+        'tprimary': '#646464',
+      },
+    },
     fontFamily: {
       sans: ['"Source Sans 3"', 'sans serif'],
       inter: ['inter', 'sans serif'],
       poppins: ['poppins', 'sans serif'],
       cooper : ['CooperLight', 'sans-serif'],
+      pmac: ['pmac', 'sans-serif'],
       icooper : ['Cooperitalic', 'sans-serif'],
-      manrope: ['Manrope', 'sans-serif'],
+      
+      bangla: ['hind-siliguri-regular', 'sans-serif'],
+      
+      hl_bold: ['Charlieb', 'sans-serif'],
+      hl_sbold: ['Charliesb', 'sans-serif'],
+      hl_reg: ['CharlieRegular', 'sans-serif'],
     },
     screens: {
       'sm': '480px', 

@@ -1,11 +1,11 @@
 const mySkills = [
     {
       category: "Languages",
-      skills: ["C++", "Java", "JavaScript", "Python", "HTML", "CSS"],
+      skills: ["C++", "C#", "JavaScript", "Python", "HTML", "CSS"],
     },
     {
       category: "Frameworks / Libraries",
-      skills: ["Node.js / Express", "Spring Boot", "React.js", "Tailwind CSS"],
+      skills: ["Node.js / Express", "ASP.NET Core", "React.js", "Tailwind CSS"],
     },
     {
       category: "Databases",
@@ -13,7 +13,7 @@ const mySkills = [
     },
     {
       category: "Tools",
-      skills: ["Postman", "Git", "GitHub", "VS Code", "IntelliJ IDEA"],
+      skills: ["Postman", "Git", "GitHub", "VS Code"],
     },
     {
       category: "Others",

@@ -1,6 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -11,9 +12,6 @@
     body {
         padding: 0;
         margin: 0;
-    }
-    .text-invert {
-        @apply text-black dark:text-white;
     }
 }
 
@@ -37,7 +35,7 @@ body {
     content: "";
     display: block;
     position: absolute;
-    background: black;
+    background: #1c1c1f;
     height: 750%;
     left: 50%;
     border-radius: 50%;
@@ -54,10 +52,6 @@ body {
     z-index: -1;
 }
 
-body {
-    overflow-y: hidden;
-}
-
 @font-face {
     font-family: "CooperLight";
     src: url("./assets/fonts/CooperLight.ttf");
@@ -69,6 +63,108 @@ body {
 }
 
 @font-face {
-    font-family: "Manrope";
-    src: url("./assets/fonts/Manrope-Variable.ttf");
+    font-family: "pmac";
+    src: url("./assets/fonts/p22macRegular.ttf");
 }
+
+@font-face {
+    font-family: "Charliesb";
+    src: url("./assets/fonts/Charlie_Display-Semibold.woff2");
+}
+
+@font-face {
+    font-family: "Charlieb";
+    src: url("./assets/fonts/Charlie_Display-Bold.woff2");
+}
+
+@font-face {
+    font-family: "CharlieRegular";
+    src: url("./assets/fonts/Charlie_Display-Regular.woff2");
+}
+
+.project-title-font {
+    font-weight: 600;
+    font-size: 28px;
+}
+
+.project-stack {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+@keyframes fadeOutUp {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(-100%);
+    }
+}
+
+.fade-out-up {
+    animation: fadeOutUp 1s forwards; /* Adjust duration as needed */
+}
+
+body {
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.hind-siliguri-regular {
+    font-family: "Hind Siliguri", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Ham Menu*/
+.hamburger {
+    cursor: pointer;
+    width: 24px;
+    height: 24px;
+    transition: all 0.25s;
+    position: relative;
+}
+
+.hamburger-top,
+.hamburger-middle,
+.hamburger-bottom {
+    position: absolute;
+    width: 24px;
+    height: 2px;
+    top: 0;
+    left: 0;
+    background: #7f7f7f;
+    transform: rotate(0);
+    transition: all 0.5s;
+}
+
+.hamburger-middle {
+    transform: translateY(7px);
+}
+
+.hamburger-bottom {
+    transform: translateY(14px);
+}
+
+.open {
+    transform: rotate(90deg);
+}
+
+.open .hamburger-top {
+    transform: rotate(45deg) translateY(6px) translateX(6px);
+}
+
+.open .hamburger-middle {
+    display: none;
+}
+
+.open .hamburger-bottom {
+    transform: rotate(-45deg) translateY(6px) translateX(-6px);
+}
+/* --Ham menu */
