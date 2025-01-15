@@ -1,5 +1,21 @@
 const myProjects = [
     {
+      title: "Hishab Rakhun",
+      type: "Web API",
+      techStack: "Spring Boot • Docker • Postgres",
+      bgColor: "bg-[#F5F5F5]",
+      link: 'https://github.com/moursalinme/hishabi-api',
+      imgUrl: "sHishabi.png"
+    },
+    {
+      title: "Pet Store",
+      type: "Web Application",
+      techStack: "Spring Boot • React • Postgres • Docker",
+      bgColor: "bg-[#F5F5F5]",
+      link: 'https://github.com/moursalinme/pet-store',
+      imgUrl: "sPetStore.png"
+    },
+    {
       title: "Apparel Arena",
       type: "Web Application",
       techStack: "React • Node.js • MongoDB • Express",
@@ -10,11 +26,12 @@ const myProjects = [
     {
       title: "Hotel Management System",
       type: "Web API",
-      techStack: "  Express • MongoDB • Swagger",
+      techStack: "Express • MongoDB • Swagger",
       bgColor: "bg-[#F5F5F5]",
       link: 'https://github.com/moursalinme/Hotel-Management-API',
       imgUrl:"smhs.png"
     },   
+
     {
       title: "Food N Fitness",
       type: "Web Application",
